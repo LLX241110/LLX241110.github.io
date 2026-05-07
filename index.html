@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>李林欣 | AI产品经理</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Linxin Li</div>
+      <ul class="nav-links">
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#internship">实习</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#experience">经历</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero / About -->
+  <section id="about" class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="particles"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">你好，我是</p>
+        <h1 class="hero-name">李林欣</h1>
+        <div class="hero-tagline">
+          <span class="typewriter" id="typewriter"></span>
+        </div>
+        <p class="hero-bio">
+          像海绵一样：<strong>吸收、重构、创造</strong>。<br/>
+          同济大学交通运输硕士在读，具备跨学科背景。<br/>
+          专注 AI Agent 落地与 AI 产品设计，有大厂实习经验。
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">联系我</a>
+          <a href="#projects" class="btn btn-secondary">查看项目</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img src="个人图片.jpg" alt="李林欣" class="avatar-photo" />
+          </div>
+        </div>
+        <div class="floating-tag tag-1">AI Agent</div>
+        <div class="floating-tag tag-2">LangChain</div>
+        <div class="floating-tag tag-3">Coze / Dify</div>
+        <div class="floating-tag tag-4">Prompt Eng.</div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+      <span>向下滚动</span>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">SKILLS</span>
+        <h2 class="section-title">技能栈</h2>
+        <p class="section-subtitle">工具与技术</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🤖</span> AI &amp; Agent
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Coze / Dify / LangChain</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Harness Engineering（Prompt → Context → Harness）</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Workflow 设计 / Tool 调用机制</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Claude Skill 编写 / Vibe Coding</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🏗️</span> 系统能力
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">需求分析 → 架构设计</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Agent 开发 → 部署优化</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">业务流程自动化与智能推送</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">📊</span> 数据与算法
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python (pandas / numpy / ML)</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SPSS / Tableau / Excel</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">数据分析与模型评估</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon">🎯</span> 产品 / 管理
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PRD 设计 / 需求拆解</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">多角色协作 / 跨团队推进</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Linux / Shell</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship -->
+  <section id="internship" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">INTERNSHIP</span>
+        <h2 class="section-title">实习经历</h2>
+        <p class="section-subtitle">大厂 AI Agent 落地实践</p>
+      </div>
+      <div class="internship-list">
+
+        <div class="intern-card">
+          <div class="intern-header">
+            <div class="intern-logo">🟡</div>
+            <div class="intern-meta">
+              <h3 class="intern-company">美团 · 无人车业务部</h3>
+              <p class="intern-role">AI Agent 实习生</p>
+            </div>
+            <div class="intern-period">
+              <span class="timeline-badge badge-active">在职</span>
+              <span class="intern-date">2026.04 — 至今</span>
+            </div>
+          </div>
+          <div class="intern-body">
+            <div class="intern-item">
+              <span class="intern-tag">Agent 采购决策系统</span>
+              <p>面向电子元器件、原材料采购场景，构建多 Agent 协同架构，实现跨平台查价、供应商报价整合与自动化比价分析，辅助生成采购与谈判策略。</p>
+            </div>
+            <div class="intern-item">
+              <span class="intern-tag">AI 驱动质量管理平台</span>
+              <p>搭建供应商质量管理系统，连接供应商、SQE、管理员，实现检验报告标准化格式转换、PPAP 任务跟踪、质量审核的线上自动化。</p>
+            </div>
+            <div class="intern-item">
+              <span class="intern-tag">业务流程自动化与智能推送</span>
+              <p>设计零件可靠性周报自动生成与推送系统，基于数据抽取 + 模板生成 + 定时调度，实现质量数据的自动汇总与多角色分发。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="intern-card">
+          <div class="intern-header">
+            <div class="intern-logo">🔵</div>
+            <div class="intern-meta">
+              <h3 class="intern-company">智己汽车科技有限公司 · 整车研发中心</h3>
+              <p class="intern-role">AI 应用产品实习生</p>
+            </div>
+            <div class="intern-period">
+              <span class="timeline-badge">已完成</span>
+              <span class="intern-date">2025.03 — 2025.07</span>
+            </div>
+          </div>
+          <div class="intern-body">
+            <div class="intern-item">
+              <span class="intern-tag">AI Agent 产品设计与落地</span>
+              <p>基于 Coze + RPA 构建企业级 AI Agent 系统，将业务流程抽象为标准化 Workflow（Prompt → Tool 调用 → 多轮决策 → 执行反馈），落地 10+ 高频业务场景。</p>
+            </div>
+            <div class="intern-item">
+              <span class="intern-tag">业务流程智能化改造</span>
+              <p>主导需求拆解与 PRD 设计，将人工流程（数据采集 / 表单处理 / 法规解读）转化为可执行 Agent 链路，实现端到端自动化。</p>
+            </div>
+            <div class="intern-item">
+              <span class="intern-tag">Prompt Engineering 与系统优化</span>
+              <p>设计结构化 Prompt 模板与多轮交互策略，提升模型稳定性与指令遵循率，增强复杂业务场景适配能力。</p>
+            </div>
+            <div class="intern-item">
+              <span class="intern-tag">规模化价值验证</span>
+              <p>推动 AI 系统业务侧复用，<strong>EWO 流程效率提升 80%，DDC 监控效率提升 85%</strong>，实现可量化降本增效。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PROJECTS</span>
+        <h2 class="section-title">项目经历</h2>
+        <p class="section-subtitle">用技术解决真实问题</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🧪</div>
+            <div class="project-badge">LLM 推理研究</div>
+          </div>
+          <h3 class="project-title">大模型中文推理增强研究</h3>
+          <ul class="project-desc project-points">
+            <li>发现大模型处理生僻汉字时推断准确率不足，验证「部首/声旁结构信息显式注入」对推理能力的提升效果</li>
+            <li>通过「故意提供错误信息」的破坏性实验将相关性验证升级为<strong>因果验证</strong>，确认两条独立推理通道（部首→语义、声旁→读音）</li>
+            <li>基于 RAG 实现检索自动化，手工注入与自动检索效果完全一致（10/10），提炼出<strong>信息分级注入策略</strong></li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">LLM</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">Prompt Engineering</span>
+            <span class="tech-tag">因果推断</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/LLX241110/token_experiment" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🛤️</div>
+            <div class="project-badge">知识图谱 · LLM</div>
+          </div>
+          <h3 class="project-title">基于 LangExtract + LLM 的钢轨运维知识图谱系统</h3>
+          <ul class="project-desc project-points">
+            <li>构建「非结构化文本 → 信息抽取 → 实体对齐 → 知识图谱 → 问答应用」完整技术链路</li>
+            <li>Schema 驱动信息抽取机制，结合 LLM 实现专业文本结构化解析与实体去重</li>
+            <li>基于 Neo4j 构建查询与问答能力，实现端到端智能辅助决策</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">LLM</span>
+            <span class="tech-tag">Neo4j</span>
+            <span class="tech-tag">知识图谱</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/LLX241110" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🛣️</div>
+            <div class="project-badge">计算机视觉</div>
+          </div>
+          <h3 class="project-title">路面病害智能检测系统</h3>
+          <ul class="project-desc project-points">
+            <li>结合 GrabCut 图像分割与改进 YOLOv8 模型，实现路面病害自动识别与分类</li>
+            <li>通过灰度化、滤波去噪、直方图均衡化等预处理流程提升检测精度</li>
+            <li>构建端到端图像处理 pipeline，支持实时路面状态评估</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">YOLOv8</span>
+            <span class="tech-tag">GrabCut</span>
+            <span class="tech-tag">OpenCV</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/LLX241110" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🌍</div>
+            <div class="project-badge">时间序列预测</div>
+          </div>
+          <h3 class="project-title">全球核武器态势预测与风险评估</h3>
+          <ul class="project-desc project-points">
+            <li>基于 ARIMA 模型与整数规划预测未来100年核武器数量变化趋势</li>
+            <li>对比多元回归、改进马尔科夫链灰色模型，以 MAE、MSE、AIC、BIC 为指标选型</li>
+            <li>论文发表于 APMCM 2023，获亚太地区大学生数学建模竞赛二等奖</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">ARIMA</span>
+            <span class="tech-tag">整数规划</span>
+            <span class="tech-tag">数学建模</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/LLX241110" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🚗</div>
+            <div class="project-badge">数据分析</div>
+          </div>
+          <h3 class="project-title">Z公司汽车香水数字营销STP战略分析</h3>
+          <ul class="project-desc project-points">
+            <li>主成分分析提取「健康功能因子」与「体验感知因子」，累计方差贡献率 &gt;90%</li>
+            <li>K-means 聚类将消费者分为三类（健康务实型 39%、体验偏好型 34%、功能全面型 27%）</li>
+            <li>结合人口统计变量交叉分析，输出完整 STP 市场定位与数字营销策略</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">SPSS</span>
+            <span class="tech-tag">Tableau</span>
+            <span class="tech-tag">K-means</span>
+            <span class="tech-tag">因子分析</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/LLX241110" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">EXPERIENCE</span>
+        <h2 class="section-title">教育与经历</h2>
+        <p class="section-subtitle">成长轨迹</p>
+      </div>
+      <div class="timeline">
+
+        <!-- Education -->
+        <div class="timeline-group">
+          <h3 class="timeline-group-title">
+            <span class="tg-icon">🎓</span> 教育背景
+          </h3>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-period">2024.09 — 2027.03</span>
+                  <span class="timeline-badge badge-active">在读</span>
+                </div>
+                <h4 class="timeline-title">同济大学 · 交通学院</h4>
+                <p class="timeline-sub">交通运输 · 硕士研究生 · 以专业前5%综合保研</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-period">2020.09 — 2024.07</span>
+                  <span class="timeline-badge">毕业</span>
+                </div>
+                <h4 class="timeline-title">同济大学 · 土木工程学院</h4>
+                <p class="timeline-sub">土木工程 · 本科 · 曾修 Python、大数据分析、管理学课程，具备跨学科背景</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Competitions -->
+        <div class="timeline-group">
+          <h3 class="timeline-group-title">
+            <span class="tg-icon">🏆</span> 竞赛奖项
+          </h3>
+          <div class="honors-list">
+            <div class="honor-item">
+              <span class="honor-year">2024.11</span>
+              <span class="honor-text">第十四届"挑战杯"创业计划竞赛 · <strong>全国银奖</strong> · 核心队员</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2023.05</span>
+              <span class="honor-text">2023年中国大学生计算机设计竞赛 · <strong>国家级二等奖</strong> · 核心队员</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2023.01</span>
+              <span class="honor-text">第十二届亚太地区大学生数学建模竞赛（APMCM）· <strong>二等奖</strong> · 核心队员</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2022.05</span>
+              <span class="honor-text">第八届全国大学生物理实验竞赛（创新）· <strong>国家级一等奖</strong> · 核心队员</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scholarships -->
+        <div class="timeline-group">
+          <h3 class="timeline-group-title">
+            <span class="tg-icon">🎖️</span> 奖学金与荣誉
+          </h3>
+          <div class="honors-list">
+            <div class="honor-item">
+              <span class="honor-year">2024—2025</span>
+              <span class="honor-text">比亚迪奖励金（全院仅7人）</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2023—2024</span>
+              <span class="honor-text">上海市优秀毕业生荣誉称号</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2022—2023</span>
+              <span class="honor-text">上海市奖学金 · 校级社会活动奖学金 · 优秀学生荣誉称号</span>
+            </div>
+            <div class="honor-item">
+              <span class="honor-year">2021—2022</span>
+              <span class="honor-text">校级优秀学生奖学金 · 校级社会活动奖学金 · 优秀学生干部荣誉称号</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campus Experience -->
+        <div class="timeline-group">
+          <h3 class="timeline-group-title">
+            <span class="tg-icon">🌟</span> 校园经历
+          </h3>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-period">2023.11 — 2024.07</span>
+                </div>
+                <h4 class="timeline-title">同济大学土木工程学院学生会 · 主席</h4>
+                <ul class="timeline-points">
+                  <li>任执行主席，成功举办学院毕业季系列活动等院级活动 10+ 次</li>
+                  <li>累计参与人次超过 2000+</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-period">2022.09 — 2023.09</span>
+                </div>
+                <h4 class="timeline-title">同济大学校团委社团发展管理中心 · 副主任</h4>
+                <ul class="timeline-points">
+                  <li>主分管媒体中心，拍摄剪辑宣传视频 5+</li>
+                  <li>负责社彩同济官方公众号运营，关注人数最高达 28000+，发布 300+ 篇推送</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">CONTACT</span>
+        <h2 class="section-title">联系我</h2>
+        <p class="section-subtitle">期待与你交流</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            如果你对我的背景感兴趣，或者想聊聊 AI Agent 产品、LLM 应用落地方向，欢迎随时联系！
+          </p>
+          <div class="contact-items">
+            <a href="mailto:18799825846@163.com" class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-detail">
+                <span class="contact-label">邮箱</span>
+                <span class="contact-value">18799825846@163.com</span>
+              </div>
+            </a>
+            <a href="tel:13370221753" class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div class="contact-detail">
+                <span class="contact-label">电话</span>
+                <span class="contact-value">133-7022-1753</span>
+              </div>
+            </a>
+            <a href="https://github.com/LLX241110" target="_blank" class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:28px;height:28px"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-detail">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/LLX241110</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-quote">
+          <blockquote>
+            <p>"像海绵一样：<br/>吸收、重构、创造"</p>
+            <cite>— 李林欣</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 李林欣 · 同济大学 · AI产品方向</p>
+      <p class="footer-sub">Built with ❤️ · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
